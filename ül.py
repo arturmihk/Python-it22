@@ -3,6 +3,58 @@
 #ül
 import math
 import random
+import datetime
+from datetime import date
+#Tahvli juurde
+
+failinimi = input("Palun sisestage failinimi: ")
+f = open(failinimi)
+opilased = []
+tana = date.today()
+jrk = int(tana.strftime("%d"))
+for i in f:
+    opilased.append(i)
+print("")
+print(f"vastama tuleb: {opilased[jrk]}")
+
+f.close()
+#Jukebox
+"""
+failinimi = input("Palun sisestage failinimi: ")
+f = open(failinimi, 'r')
+jrk = 1
+laulud = []
+for i in f:
+    print(jrk,".",i,end="")
+    laulud.append(i)
+    jrk+=1
+    
+print("")
+laul = (int(input("Valige laulu järjekorra number: ")))
+print(f"Mängitav muusikapala on:{laulud[laul-1]}")
+
+
+
+
+
+f.close()
+
+#Sissetulekud
+fail = open("konto.txt", encoding="UTF-8")
+for i in fail:
+    if i>"0":
+        print(i, end=" ")
+
+fail.close()
+
+#jänesevanemate mure ver.3
+ring = int(input("Sisesta ringide arv: "))
+porgand = 0
+for i in range(ring+1):
+    if i%2 == 0:
+        porgand += i
+print(f"porgandite koguarv on:{porgand}")
+        
 
 #Ülikooli vastuvõetud
 
@@ -16,7 +68,6 @@ index = aastad.index(aasta)
 
 print(vastuvõetud[index])
 fail.close()
-
 
 #male
 nisutera = 0.5
@@ -96,3 +147,4 @@ print(lause)
 
 #Tervitus
 print("Tere, Maailm!")
+"""
