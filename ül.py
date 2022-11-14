@@ -5,6 +5,63 @@ import math
 import random
 import datetime
 from datetime import date
+"""
+#Kuupäev
+def kuu_nimi
+def kuupäev_sõnena
+
+
+#Mündid
+def pronksikarva_summa
+"""
+
+#Tervitused mõtisklustega
+def tervitus(jrk):
+    print('Võõrustaja "Tere!" ')
+    print(f"Täna {jrk}. kord tervitada, mõtiskleb võõrustaja")
+    print('Külaline: "Tere, suur tänu kutse eest!" ')
+
+külarv = int(input("Sisestage külaliste arv: "))
+for i in range (külarv):
+    print(tervitus(külarv))
+    
+    
+    
+print(tervitus())
+"""
+#Peo eelarve
+def eelarve(kul):
+    arve = kul*10+55
+    return arve
+kutsutudin = int(input("Mitu inimest on kutsutud? "))
+tulevadin = int(input("Mitu inimest tuleb? "))
+print(f"Maksimaalne eelarve: {eelarve(kutsutudin)}")
+print(f"Minimaalne eelarve: {eelarve(tulevadin)}")
+    
+
+
+
+#Õunamahla tegemine
+def mahlapakkide_arv(kg):
+    mahlap = round(kg*0.4/3)
+    return mahlap
+õunadkg = int(input("Sisesta siia õunte kg arvu: "))
+print(mahlapakkide_arv(õunadkg))
+
+
+
+#Bänner
+
+def banner(reklaam):
+    reklaam=reklaam.upper()
+    return reklaam
+korda = int(input("Mitu korda soovite reklaamlauset kuvada?"))
+teade = input("Sisestage reklaamlasue: ")
+for i in range (korda):
+    print(banner(teade))
+
+
+
 #Tahvli juurde
 
 failinimi = input("Palun sisestage failinimi: ")
@@ -19,7 +76,7 @@ print(f"vastama tuleb: {opilased[jrk]}")
 
 f.close()
 #Jukebox
-"""
+
 failinimi = input("Palun sisestage failinimi: ")
 f = open(failinimi, 'r')
 jrk = 1
