@@ -9,26 +9,36 @@ from datetime import date
 #Kuupäev
 def kuu_nimi
 def kuupäev_sõnena
-
-
-#Mündid
-def pronksikarva_summa
 """
 
+#Mündid
+def pronksikarva_summa(taisa):
+    taisa = [1,2,5]
+valif = input("Sisesta failinimi: ")
+file = open(valif)
+mündid = file.readlines()
+põrsas = 0
+
+if mündid < pronksikarva_summa(5):
+    põrsas+=1
+else:
+    continue
+"""
 #Tervitused mõtisklustega
-def tervitus(jrk):
+def tervitus(jrk, mituk):
     print('Võõrustaja "Tere!" ')
     print(f"Täna {jrk}. kord tervitada, mõtiskleb võõrustaja")
     print('Külaline: "Tere, suur tänu kutse eest!" ')
-
+    for i in range(jrk):
+        if mituk < jrk:
+            continue
+    
 külarv = int(input("Sisestage külaliste arv: "))
+inimesed = 1
 for i in range (külarv):
-    print(tervitus(külarv))
-    
-    
-    
-print(tervitus())
-"""
+    print(tervitus(inimesed,külarv))
+    inimesed+=1
+
 #Peo eelarve
 def eelarve(kul):
     arve = kul*10+55
