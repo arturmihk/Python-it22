@@ -5,25 +5,35 @@ import math
 import random
 import datetime
 from datetime import date
-"""
+
 #Kuupäev
-def kuu_nimi
-def kuupäev_sõnena
+def kuu_nimi(kuuj):
+    kuud = ["","jaanuar","veebruar","märts","aprill","juuni","juuli","august","september","oktoober","november","december"]
+    return kuud[kuuj]
+def kuupäev_sõnena(a,u,p):
+    print(f"{a}.{u}.{p}")
+kp = input("Lisa kp: ")
+p,k,a = kp.split(".")
+kuu_nimi(int(k))(kuupäev_sõnena(int(p,a)))
+
 """
 
 #Mündid
-def pronksikarva_summa(taisa):
-    taisa = [1,2,5]
-valif = input("Sisesta failinimi: ")
-file = open(valif)
-mündid = file.readlines()
-põrsas = 0
+def pronksikarva_summa(mundid):
+    kokku = 0
+    for munt in mundid:
+        if munt <= 5:
+            kokku+=munt
+    return kokku
+failv = input("Sisesta failinimi: ")
+fail = open(failv)
 
-if mündid < pronksikarva_summa(5):
-    põrsas+=1
-else:
-    continue
-"""
+mundid = []
+for rida in fail:
+    mundid.append(int(rida))
+    
+print(f"Hoipõrasse läheb {pronksikarva_summa(mundid)} senti.")
+
 #Tervitused mõtisklustega
 def tervitus(jrk, mituk):
     print('Võõrustaja "Tere!" ')
@@ -32,7 +42,7 @@ def tervitus(jrk, mituk):
     for i in range(jrk):
         if mituk < jrk:
             continue
-    
+    return jrk
 külarv = int(input("Sisestage külaliste arv: "))
 inimesed = 1
 for i in range (külarv):
