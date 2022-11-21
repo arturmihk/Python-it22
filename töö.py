@@ -7,9 +7,8 @@
 #programmi dialoog kasutajaga on arusaadav ja üheselt mõistetav
 #kogu looming salvestatakse tekstifaili
 #kood kommenteeritud
-
+f = open("har5", "w")
 def kaugush(esi, teine, kolmas):
-    with open("har5.txt", "w") as f:
         suurim = max(esi,teine,kolmas)
         avg = round((esi+teine+kolmas)/3)
         print(f"Sinu parim hüpe oli {suurim}")
