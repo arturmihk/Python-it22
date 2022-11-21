@@ -7,7 +7,7 @@
 #programmi dialoog kasutajaga on arusaadav ja üheselt mõistetav
 #kogu looming salvestatakse tekstifaili
 #kood kommenteeritud
-f = open("har5", "w")
+f = open("har5", "w") #Ei saanud failiga hakkama kood muidu töötab
 def kaugush(esi, teine, kolmas):
         suurim = max(esi,teine,kolmas)
         avg = round((esi+teine+kolmas)/3)
