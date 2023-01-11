@@ -13,7 +13,8 @@ def arvuta():
     kmaks = hind*kaive/100
     kokku = hind+kmaks
     print(hind,kaive,kmaks,kokku)
-    
+    km.config(text=str(kmaks)+"€")
+    hinds.config(text=str(kokku)+"€")
 #sildid
 silt = Label(aken, text="Hind käibemaksuta:")
 silt.grid(row=0,column=0)
@@ -33,8 +34,8 @@ km.grid(row=7,column=1 ,sticky="w")
 silt = Label(aken, text="Hind käibemaksuta:")
 silt.grid(row=8,column=0)
 
-hind = Label(aken, text="0.00€")
-hind.grid(row=8,column=1, sticky="w")
+hinds = Label(aken, text="0.00€")
+hinds.grid(row=8,column=1, sticky="w")
 #sisestusväljad
 sisestus = Entry(aken)
 sisestus.grid(row=0,column=1)
