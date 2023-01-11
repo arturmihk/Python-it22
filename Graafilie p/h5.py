@@ -1,6 +1,6 @@
 from tkinter import *
 
-#akna seaded
+
 aken = Tk()
 aken.title('Käibemaksukalkulaator')
 aken.iconbitmap('favicon.ico')
@@ -8,8 +8,12 @@ aken.resizable(0, 0)
 
 #funktsioonid
 def arvuta():
-    hind = sisestus.get()
-    print(hind,var.get())
+    hind = int(float(sisestus.get()))
+    kaive = int(float(var.get()))
+    kmaks = hind*kaive/100
+    kokku = hind+kmaks
+    print(hind,kaive,kmaks,kokku)
+    
 #sildid
 silt = Label(aken, text="Hind käibemaksuta:")
 silt.grid(row=0,column=0)
