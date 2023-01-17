@@ -16,10 +16,10 @@ def banner():
     #return reklaam
     kordaja = int(sisestus.get())
     lause = str(sisestuslause.get())
-    print(kordaja)
     print(lause)
-    silt.config(text=(lause))
-    
+    for i in range(kordaja):
+        silt = Label(aken,text=(lause))
+        silt.grid(row=i+1,rowspan=i+1, column=0, sticky="w")
 
         
     
@@ -31,8 +31,7 @@ siltrk.grid(row=0,column=0)
 siltrl = Label(aken, text="Sisestage reklaamlause:")
 siltrl.grid(row=1,column=0, sticky="w")
 
-silt = Label(aken, text="tere")
-silt.grid(row=4, column=0, sticky="w")
+
 
 #Sisestused
 sisestus = Entry(aken)
