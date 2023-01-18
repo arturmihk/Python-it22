@@ -26,7 +26,7 @@ def banner():
     
 #sildid
 siltrk = Label(aken, text="Mitu korda soovite reklaamlasuset kuvada?")
-siltrk.grid(row=0,column=0)
+siltrk.grid(row=0,column=0, sticky="w")
 
 siltrl = Label(aken, text="Sisestage reklaamlause:")
 siltrl.grid(row=1,column=0, sticky="w")
