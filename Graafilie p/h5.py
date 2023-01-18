@@ -3,7 +3,6 @@ from tkinter import *
 
 aken = Tk()
 aken.title('Käibemaksukalkulaator')
-aken.iconbitmap('favicon.ico')
 aken.resizable(0, 0)
 
 #funktsioonid
@@ -45,10 +44,10 @@ nupp1.grid(row=9, column=1, sticky="e")
 
 #valikukast
 var = IntVar()
-valikukast = Radiobutton(aken,text="9%", variable=var, value=9, command=arvuta)
+valikukast = Radiobutton(aken,text="9%", variable=var, value=9,)
 valikukast.grid(row=4,column=1,sticky="w")
 
-valikukast = Radiobutton(aken,text="20%", variable=var, value=20, command=arvuta)
+valikukast = Radiobutton(aken,text="20%", variable=var, value=20,)
 valikukast.grid(row=5,column=1,sticky="w")
 aken.mainloop()
 
